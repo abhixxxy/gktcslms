@@ -1,2 +1,3 @@
-
-.venv
+# Ignore virtual environment
+venv/
+notepad .gitignore
