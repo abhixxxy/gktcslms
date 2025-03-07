@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'accounts/css/style.css' %}?v=2">
+{% endblock %}
+{% block content %}
+    <div class="container text-center">
+        <h1>Welcome to GKTCS TMS</h1>
+        <p>Please log in or register to continue.</p>
+        <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+        <a href="{% url 'register' %}" class="btn btn-success">Register</a>
+    </div>
+{% endblock %}
